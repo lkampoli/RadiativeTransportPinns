@@ -67,7 +67,7 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 
-import EquationModels.RadTrans1D as Ec
+import EquationModels.RadiativeInverseBEST as Ec
 
 import ObjectClass
 from ModelClassTorch2 import *

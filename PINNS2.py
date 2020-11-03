@@ -13,21 +13,21 @@ def initialize_inputs(len_sys_argv):
 
         # Number of training+validation points
         n_coll_ = 8192
-        n_u_ = 8192
-        n_int_ = 0
+        n_u_ = 120
+        n_int_ = 4096
 
         # Only for Navier Stokes
         n_object = 0
         ob = None
 
         # Additional Info
-        folder_path_ = "KvD_double"
+        folder_path_ = "Inverse"
         point_ = "sobol"
         validation_size_ = 0.0
         network_properties_ = {
             "hidden_layers": 4,
             "neurons": 20,
-            "residual_parameter": 0.1,
+            "residual_parameter": 1,
             "kernel_regularizer": 2,
             "regularization_parameter": 0,
             "batch_size": (n_coll_ + n_u_ + n_int_),

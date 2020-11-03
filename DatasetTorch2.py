@@ -1,4 +1,4 @@
-from ImportFileAdv import *
+from ImportFile import *
 
 pi = math.pi
 
